@@ -1,0 +1,6 @@
+@use '../abstract/variables';
+
+body{
+    box-sizing: border-box;
+    background:variables.$background-color;
+}

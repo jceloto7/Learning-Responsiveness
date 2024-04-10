@@ -1,0 +1,35 @@
+@use '../abstract/variables';
+@use '../abstract/mixins';
+
+.siteHeader{
+    display: flex;
+    //justify-content: space-around;
+    align-items: center;
+    padding: 30px;
+    margin-top: 1rem;
+    gap:16px;
+}
+
+
+
+.siteHeader__image__sonia{
+    width: 57px;
+    height: 57px; 
+    
+    border-radius: 57px;
+    background: url(<path-to-image>) lightgray -44.533px -13.58px / 346.831% 231.027% no-repeat;
+}
+
+.siteHeader__summary{
+    display: flex;
+    flex-direction: column;
+    gap:8px;
+
+    h1{
+        @include mixins.ff-fs-fw-fc(variables.$primary-font,22px,700,variables.$quaternary-color);
+    }
+
+    p{
+        @include mixins.ff-fs-fw-fc(variables.$primary-font,14px,400,variables.$quintenary-color); 
+    }
+}
