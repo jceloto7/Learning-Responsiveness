@@ -3,11 +3,9 @@
 
 .siteHeader{
     display: flex;
-    //justify-content: space-around;
-    align-items: center;
-    padding: 30px;
-    margin-top: 1rem;
+    align-items:center;
     gap:16px;
+    margin-bottom:1.9rem ;
 }
 
 
@@ -27,6 +25,7 @@
 
     h1{
         @include mixins.ff-fs-fw-fc(variables.$primary-font,22px,700,variables.$quaternary-color);
+        align-self: flex-start;
     }
 
     p{
