@@ -10,57 +10,179 @@
 <body>
     <header class="siteHeader">
         <div class="siteHeader__image">
-            <img class="siteHeader__image__sonia" src="/assets/1.svg" alt="Foto profissional da doutora Sônia.">
+            <img class="siteHeader__image__sonia" src="/assets/Sonia.svg" alt="Foto profissional da doutora Sônia.">
         </div>
         <div class="siteHeader__summary">
-            <h1>Olá, Sônia</h1>
+            <h2>Olá, Sônia</h2>
             <p>Mais 4 consultas hoje</p>
         </div>
     </header>
     
-    <main>
-       <section class ="today">
-        <h1>Hoje</h1>
-        <ul class="appointments">
-            <li class="card">
-                <img class ="card__profilePic" src ="assets/2.svg" alt="Foto de perfil da paciente Luciana Dias.">
-                <h3 class = "card__name">Luciana Dias</h3>
-                <img class ="card__chat" src="assets/Chatcirculo1.svg" alt="Ícone para inciar conversa por chat.">
-                <img class ="card__camera" src="assets/Camera.svg" alt="Ícone ilustrativo de câmera.">
-                <p class =  "card__service">Consulta remota</p>
-                <hr class=  "card__line">
-                <p class =  "card__hour">14:00 - 15:00 (1 hora)</p>
-                <button type="button"  class =  "card__video">Ligar por vídeo</button>
-                <button type="button"  class=   "card__audio">Ligar por áudio  </button>                   
+    <main class="siteMain">
+       <section class ="siteMain__weekDay">
+        <h2>Hoje</h2>
+        <ul class="siteMain__weekDay__appointments">
+            <li class="siteMain__weekDay__appointments__card">
+                <img class ="siteMain__weekDay__appointments__card__profilePic" src ="assets/Luciana.svg" alt="Foto de perfil da paciente Luciana Dias.">
+                <h3 class = "siteMain__weekDay__appointments__card__name">Luciana Dias</h3>
+                <img class ="siteMain__weekDay__appointments__card__chat" src="assets/Chatcirculo1.svg" alt="Ícone para inciar conversa por chat.">
+                <img class ="siteMain__weekDay__appointments__card__camera" src="assets/Camera.svg" alt="Ícone ilustrativo de câmera.">
+                <p class =  "siteMain__weekDay__appointments__card__service">Consulta remota</p>
+                <hr class=  "siteMain__weekDay__appointments__card__line">
+                <p class =  "siteMain__weekDay__appointments__card__hour">14:00 - 15:00 (1 hora)</p>
+                <button type="button"  class =  "siteMain__weekDay__appointments__card__video">Ligar por vídeo</button>
+                <button type="button"  class=   "siteMain__weekDay__appointments__card__audio">Ligar por áudio  </button>                   
             </li>
-            <li class="card">
-                <img class ="card__profilePic" src ="assets/3.svg" alt="Foto de perfil da paciente Larissa Santana.">
-                <h3 class = "card__name">Larissa Santana</h3>
-                <img class ="card__chat" src="assets/Chatcirculo1.svg" alt="Ícone para inciar conversa por chat.">
-                <img class ="card__camera" src="assets/Camera.svg" alt="Ícone ilustrativo de câmera.">
-                <p class =  "card__service">Consulta no local</p>
-                <hr class=  "card__line">
-                <p class =  "card__hour">16:00 - 17:00 (1 hora)</p>
-                <button type="button" class =  "card__address">Ver endereço</button>                   
+            <li class="siteMain__weekDay__appointments__card">
+                <img class ="siteMain__weekDay__appointments__card__profilePic" src ="assets/Larissa.svg" alt="Foto de perfil da paciente Larissa Santana.">
+                <h3 class = "siteMain__weekDay__appointments__card__name">Larissa Santana</h3>
+                <img class ="siteMain__weekDay__appointments__card__chat" src="assets/Chatcirculo1.svg" alt="Ícone para inciar conversa por chat.">
+                <img class ="siteMain__weekDay__appointments__card__camera" src="assets/Camera.svg" alt="Ícone ilustrativo de câmera.">
+                <p class =  "siteMain__weekDay__appointments__card__service">Consulta no local</p>
+                <hr class=  "siteMain__weekDay__appointments__card__line">
+                <p class =  "siteMain__weekDay__appointments__card__hour">16:00 - 17:00 (1 hora)</p>
+                <button type="button" class =  "siteMain__weekDay__appointments__card__address">Ver endereço</button>                   
             </li>
-            <li class="card">
-                <img class ="card__profilePic" src ="assets/4.svg" alt="Foto de perfil do paciente Marcos Correia.">
-                <h3 class = "card__name">Marcos Correia</h3>
-                <img class ="card__chat" src="assets/Chatcirculo1.svg" alt="Ícone para inciar conversa por chat.">
-                <img class ="card__camera" src="assets/Camera.svg" alt="Ícone ilustrativo de câmera.">
-                <p class =  "card__service">Consulta remota</p>
-                <hr class=  "card__line">
-                <p class =  "card__hour">17:20 - 18:00 (1 hora)</p>
-                <button type ="button" class =  "card__video">Ligar por vídeo</button>
-                <button type ="button" class=   "card__audio">Ligar por áudio  </button>                   
+            <li class="siteMain__weekDay__appointments__card">
+                <img class ="siteMain__weekDay__appointments__card__profilePic" src ="assets/Marcos.svg" alt="Foto de perfil do paciente Marcos Correia.">
+                <h3 class = "siteMain__weekDay__appointments__card__name">Marcos Correia</h3>
+                <img class ="siteMain__weekDay__appointments__card__chat" src="assets/Chatcirculo1.svg" alt="Ícone para inciar conversa por chat.">
+                <img class ="siteMain__weekDay__appointments__card__camera" src="assets/Camera.svg" alt="Ícone ilustrativo de câmera.">
+                <p class =  "siteMain__weekDay__appointments__card__service">Consulta remota</p>
+                <hr class=  "siteMain__weekDay__appointments__card__line">
+                <p class =  "siteMain__weekDay__appointments__card__hour">17:20 - 18:00 (40 minutos)</p>
+                <button type ="button" class =  "siteMain__weekDay__appointments__card__video">Ligar por vídeo</button>
+                <button type ="button" class=   "siteMain__weekDay__appointments__card__audio">Ligar por áudio  </button>                   
             </li>
+        </ul>
+       </section> 
+
+       <section class ="siteMain__weekDay">
+        <h2>Amanhã</h2>
+        <ul class="siteMain__weekDay__appointments">
+            <li class="siteMain__weekDay__appointments__card">
+                <img class ="siteMain__weekDay__appointments__card__profilePic" src ="assets/Clara.svg" alt="Foto de perfil da paciente Clara Lemos.">
+                <h3 class = "siteMain__weekDay__appointments__card__name">Clara Lemos</h3>
+                <img class ="siteMain__weekDay__appointments__card__chat" src="assets/Chatcirculo1.svg" alt="Ícone para inciar conversa por chat.">
+                <img class ="siteMain__weekDay__appointments__card__camera" src="assets/Camera.svg" alt="Ícone ilustrativo de câmera.">
+                <p class =  "siteMain__weekDay__appointments__card__service">Consulta no local</p>
+                <hr class=  "siteMain__weekDay__appointments__card__line">
+                <p class =  "siteMain__weekDay__appointments__card__hour">18:00 - 19:00 (1 hora)</p>
+                <button type="button" class =  "siteMain__weekDay__appointments__card__address">Ver endereço</button>                   
+            </li>
+            <li class="siteMain__weekDay__appointments__card">
+                <img class ="siteMain__weekDay__appointments__card__profilePic" src ="assets/Luciana.svg" alt="Foto de perfil da paciente Luciana Dias.">
+                <h3 class = "siteMain__weekDay__appointments__card__name">Luciana Dias</h3>
+                <img class ="siteMain__weekDay__appointments__card__chat" src="assets/Chatcirculo1.svg" alt="Ícone para inciar conversa por chat.">
+                <img class ="siteMain__weekDay__appointments__card__camera" src="assets/Camera.svg" alt="Ícone ilustrativo de câmera.">
+                <p class =  "siteMain__weekDay__appointments__card__service">Consulta remota</p>
+                <hr class=  "siteMain__weekDay__appointments__card__line">
+                <p class =  "siteMain__weekDay__appointments__card__hour">14:00 - 15:00 (1 hora)</p>
+                <button type="button"  class =  "siteMain__weekDay__appointments__card__video">Ligar por vídeo</button>
+                <button type="button"  class=   "siteMain__weekDay__appointments__card__audio">Ligar por áudio  </button>                   
+            </li>
+            <li class="siteMain__weekDay__appointments__card">
+                <img class ="siteMain__weekDay__appointments__card__profilePic" src ="assets/Marcos.svg" alt="Foto de perfil do paciente Marcos Correia.">
+                <h3 class = "siteMain__weekDay__appointments__card__name">Marcos Correia</h3>
+                <img class ="siteMain__weekDay__appointments__card__chat" src="assets/Chatcirculo1.svg" alt="Ícone para inciar conversa por chat.">
+                <img class ="siteMain__weekDay__appointments__card__camera" src="assets/Camera.svg" alt="Ícone ilustrativo de câmera.">
+                <p class =  "siteMain__weekDay__appointments__card__service">Consulta remota</p>
+                <hr class=  "siteMain__weekDay__appointments__card__line">
+                <p class =  "siteMain__weekDay__appointments__card__hour">17:20 - 18:00 (40 minutos)</p>
+                <button type ="button" class =  "siteMain__weekDay__appointments__card__video">Ligar por vídeo</button>
+                <button type ="button" class=   "siteMain__weekDay__appointments__card__audio">Ligar por áudio  </button>                   
+            </li>
+            <li class="siteMain__weekDay__appointments__card">
+                <img class ="siteMain__weekDay__appointments__card__profilePic" src ="assets/Larissa.svg" alt="Foto de perfil da paciente Larissa Santana.">
+                <h3 class = "siteMain__weekDay__appointments__card__name">Larissa Santana</h3>
+                <img class ="siteMain__weekDay__appointments__card__chat" src="assets/Chatcirculo1.svg" alt="Ícone para inciar conversa por chat.">
+                <img class ="siteMain__weekDay__appointments__card__camera" src="assets/Camera.svg" alt="Ícone ilustrativo de câmera.">
+                <p class =  "siteMain__weekDay__appointments__card__service">Consulta no local</p>
+                <hr class=  "siteMain__weekDay__appointments__card__line">
+                <p class =  "siteMain__weekDay__appointments__card__hour">16:00 - 17:00 (1 hora)</p>
+                <button type="button" class =  "siteMain__weekDay__appointments__card__address">Ver endereço</button>                   
+            </li>
+          
+        </ul>
+       </section> 
+
+       <section class ="siteMain__weekDay">
+        <h2>Quarta-feira</h2>
+        <ul class="siteMain__weekDay__appointments">
+            <li class="siteMain__weekDay__appointments__card">
+                <img class ="siteMain__weekDay__appointments__card__profilePic" src ="assets/Clara.svg" alt="Foto de perfil da paciente Clara Lemos.">
+                <h3 class = "siteMain__weekDay__appointments__card__name">Clara Lemos</h3>
+                <img class ="siteMain__weekDay__appointments__card__chat" src="assets/Chatcirculo1.svg" alt="Ícone para inciar conversa por chat.">
+                <img class ="siteMain__weekDay__appointments__card__camera" src="assets/Camera.svg" alt="Ícone ilustrativo de câmera.">
+                <p class =  "siteMain__weekDay__appointments__card__service">Consulta no local</p>
+                <hr class=  "siteMain__weekDay__appointments__card__line">
+                <p class =  "siteMain__weekDay__appointments__card__hour">18:00 - 19:00 (1 hora)</p>
+                <button type="button" class =  "siteMain__weekDay__appointments__card__address">Ver endereço</button>                   
+            </li>
+            <li class="siteMain__weekDay__appointments__card">
+                <img class ="siteMain__weekDay__appointments__card__profilePic" src ="assets/Luciana.svg" alt="Foto de perfil da paciente Luciana Dias.">
+                <h3 class = "siteMain__weekDay__appointments__card__name">Luciana Dias</h3>
+                <img class ="siteMain__weekDay__appointments__card__chat" src="assets/Chatcirculo1.svg" alt="Ícone para inciar conversa por chat.">
+                <img class ="siteMain__weekDay__appointments__card__camera" src="assets/Camera.svg" alt="Ícone ilustrativo de câmera.">
+                <p class =  "siteMain__weekDay__appointments__card__service">Consulta remota</p>
+                <hr class=  "siteMain__weekDay__appointments__card__line">
+                <p class =  "siteMain__weekDay__appointments__card__hour">14:00 - 15:00 (1 hora)</p>
+                <button type="button"  class =  "siteMain__weekDay__appointments__card__video">Ligar por vídeo</button>
+                <button type="button"  class=   "siteMain__weekDay__appointments__card__audio">Ligar por áudio  </button>                   
+            </li>
+            <li class="siteMain__weekDay__appointments__card">
+                <img class ="siteMain__weekDay__appointments__card__profilePic" src ="assets/Marcos.svg" alt="Foto de perfil do paciente Marcos Correia.">
+                <h3 class = "siteMain__weekDay__appointments__card__name">Marcos Correia</h3>
+                <img class ="siteMain__weekDay__appointments__card__chat" src="assets/Chatcirculo1.svg" alt="Ícone para inciar conversa por chat.">
+                <img class ="siteMain__weekDay__appointments__card__camera" src="assets/Camera.svg" alt="Ícone ilustrativo de câmera.">
+                <p class =  "siteMain__weekDay__appointments__card__service">Consulta remota</p>
+                <hr class=  "siteMain__weekDay__appointments__card__line">
+                <p class =  "siteMain__weekDay__appointments__card__hour">17:20 - 18:00 (40 minutos)</p>
+                <button type ="button" class =  "siteMain__weekDay__appointments__card__video">Ligar por vídeo</button>
+                <button type ="button" class=   "siteMain__weekDay__appointments__card__audio">Ligar por áudio  </button>                   
+            </li>
+            <li class="siteMain__weekDay__appointments__card">
+                <img class ="siteMain__weekDay__appointments__card__profilePic" src ="assets/Larissa.svg" alt="Foto de perfil da paciente Larissa Santana.">
+                <h3 class = "siteMain__weekDay__appointments__card__name">Larissa Santana</h3>
+                <img class ="siteMain__weekDay__appointments__card__chat" src="assets/Chatcirculo1.svg" alt="Ícone para inciar conversa por chat.">
+                <img class ="siteMain__weekDay__appointments__card__camera" src="assets/Camera.svg" alt="Ícone ilustrativo de câmera.">
+                <p class =  "siteMain__weekDay__appointments__card__service">Consulta no local</p>
+                <hr class=  "siteMain__weekDay__appointments__card__line">
+                <p class =  "siteMain__weekDay__appointments__card__hour">16:00 - 17:00 (1 hora)</p>
+                <button type="button" class =  "siteMain__weekDay__appointments__card__address">Ver endereço</button>                   
+            </li>        
         </ul>
        </section> 
 
     </main>
 
-    <footer>
-
+    <footer class ="siteFooter">
+        <div class ="siteFooter__floatingButton">
+            <img class="siteFooter__floatingButton__icon"src="/assets/BotaoFlutuante.svg" alt="Ícone de um botão circular azul com o símbolo de +">
+        </div>
+        <nav class="siteFooter__menu">
+            <ul class="siteFooter__menu__items">
+                <li class="siteFooter__menu__items__appointments"> 
+                    <img src="/assets/Calendarioicone.svg">
+                    <p>Consultas</p>
+                 </li>
+                 
+                 <li class="siteFooter__menu__items__clients">
+                    <img src="assets/clientesIcone.svg">
+                    <p class=>Clientes</p>
+                </li>
+                
+                <li class ="siteFooter__menu__items__reports">
+                    <img src="assets/relatoriosIcone.svg">
+                    <p class=>Relatórios</p>
+                </li>
+                
+                <li class="siteFooter__menu__items__menuButton">
+                    <img src="assets/menuIcone.svg">
+                    <p class=>Menu</p>
+                </li>
+            </ul>
+        </nav>
     </footer>
 </body>
 </html>

@@ -51,13 +51,18 @@ table {
 body {
   box-sizing: border-box;
   background: #E5E5E5;
-  margin: 2rem 1rem;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
 }
 
 .siteHeader {
   display: flex;
   align-items: center;
   gap: 16px;
+  margin: 10% 5%;
   margin-bottom: 1.9rem;
 }
 
@@ -73,7 +78,7 @@ body {
   flex-direction: column;
   gap: 8px;
 }
-.siteHeader__summary h1 {
+.siteHeader__summary h2 {
   font-family: "Montserrat", sans-serif;
   font-size: 22px;
   font-weight: 700;
@@ -87,7 +92,11 @@ body {
   color: #A3A3A3;
 }
 
-.today h1 {
+.siteMain {
+  margin: 10% 5%;
+}
+
+.siteMain__weekDay h2 {
   font-family: "Montserrat", sans-serif;
   font-size: 16px;
   font-weight: 700;
@@ -95,13 +104,14 @@ body {
   margin-bottom: 0.5rem;
 }
 
-.appointments {
+.siteMain__weekDay__appointments {
   display: flex;
   flex-direction: column;
   gap: 16px;
+  margin-bottom: 2rem;
 }
 
-.card {
+.siteMain__weekDay__appointments__card {
   display: grid;
   background: #FFFFFF;
   border-radius: 8px;
@@ -109,12 +119,11 @@ body {
           backdrop-filter: blur(11px);
   width: 328px;
   height: 170px;
-  align-items: start;
   grid-template-columns: 1rem 3rem 1.6rem 5.3rem 6.7rem auto;
   grid-template-rows: 1.3rem 1.3rem 1.7rem 0.8rem 1.6rem auto;
 }
 
-.card__profilePic {
+.siteMain__weekDay__appointments__card__profilePic {
   grid-area: 2/2/3/3;
   width: 32px;
   height: 32px;
@@ -122,9 +131,11 @@ body {
   background: url(<path-to-image>) lightgray 50%/cover no-repeat;
 }
 
-.card__name {
+.siteMain__weekDay__appointments__card__name {
   grid-area: 2/3/3/5;
   width: 116px;
+  position: absolute;
+  bottom: 0.1rem;
   font-family: "Montserrat", sans-serif;
   font-size: 14px;
   font-weight: 700;
@@ -132,42 +143,37 @@ body {
   line-height: 160%;
 }
 
-.card__chat {
+.siteMain__weekDay__appointments__card__chat {
   grid-area: 2/6/3/7;
   width: 32px;
   height: 32px;
 }
 
-.card__camera {
+.siteMain__weekDay__appointments__card__camera {
   grid-area: 3/3/4/4;
-  position: absolute;
-  top: 0.2rem;
   width: 16px;
   height: 10.667px;
 }
 
-.card__service {
+.siteMain__weekDay__appointments__card__service {
   grid-area: 3/4/4/6;
-  position: absolute;
-  top: 0.15rem;
   font-family: "Montserrat", sans-serif;
   font-size: 12px;
   font-weight: 400;
   color: #A3A3A3;
 }
 
-.card__line {
+.siteMain__weekDay__appointments__card__line {
   position: absolute;
   bottom: 0.2rem;
   grid-area: 4/1/5/7;
-  align-self: start;
   width: 328px;
   height: 0.1px;
   opacity: 0.1;
   background: #464646;
 }
 
-.card__hour {
+.siteMain__weekDay__appointments__card__hour {
   grid-area: 5/2/6/5;
   font-family: "Montserrat", sans-serif;
   font-size: 12px;
@@ -175,7 +181,7 @@ body {
   color: #464646;
 }
 
-.card__video {
+.siteMain__weekDay__appointments__card__video {
   grid-area: 6/2/7/5;
   display: flex;
   justify-content: center;
@@ -183,6 +189,7 @@ body {
   width: 139px;
   height: 48px;
   border-radius: 8px;
+  border: none;
   background: #FFB050;
   box-shadow: 0px 4px 16px 0px rgba(255, 176, 80, 0.16);
   font-family: "Montserrat", sans-serif;
@@ -191,7 +198,7 @@ body {
   color: #FFFFFF;
 }
 
-.card__audio {
+.siteMain__weekDay__appointments__card__audio {
   grid-area: 6/5/7/7;
   display: flex;
   justify-content: center;
@@ -207,7 +214,7 @@ body {
   color: #464646;
 }
 
-.card__address {
+.siteMain__weekDay__appointments__card__address {
   grid-area: 6/2/7/7;
   display: flex;
   justify-content: center;
@@ -221,4 +228,120 @@ body {
   font-size: 14px;
   font-weight: 500;
   color: #FFFFFF;
+}
+
+.siteFooter {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+}
+
+.siteFooter__floatingButton {
+  display: flex;
+  margin-left: 77%;
+}
+
+.siteFooter__floatingButton__icon {
+  border: none;
+  background: none;
+}
+
+.siteFooter__menu {
+  width: 360px;
+  height: 58px;
+  flex-shrink: 0;
+}
+
+.siteFooter__menu__items {
+  width: 360px;
+  height: 58px;
+  flex-shrink: 0;
+  border-radius: 12px 12px 0px 0px;
+  background: #FFFFFF;
+  box-shadow: 0px -4px 8px 0px rgba(0, 0, 0, 0.06);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.siteFooter__menu__items__appointments {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 60px;
+  height: 42px;
+  flex-shrink: 0;
+  gap: 1px;
+}
+.siteFooter__menu__items__appointments p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  color: #4894FF;
+}
+.siteFooter__menu__items__appointments img {
+  width: 20px;
+  height: 22px;
+}
+
+.siteFooter__menu__items__clients {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  opacity: 0.3;
+  width: 49px;
+  height: 41px;
+  gap: 2px;
+}
+.siteFooter__menu__items__clients p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  color: #464646;
+}
+.siteFooter__menu__items__clients img {
+  width: 24px;
+  height: 20px;
+}
+
+.siteFooter__menu__items__reports {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  opacity: 0.3;
+  width: 60px;
+  height: 40px;
+  gap: 3px;
+}
+.siteFooter__menu__items__reports p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  color: #464646;
+}
+.siteFooter__menu__items__reports img {
+  width: 14px;
+  height: 18px;
+  flex-shrink: 0;
+}
+
+.siteFooter__menu__items__menuButton {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  opacity: 0.3;
+  width: 35px;
+  height: 38px;
+  gap: 5px;
+}
+.siteFooter__menu__items__menuButton p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  color: #464646;
+}
+.siteFooter__menu__items__menuButton img {
+  width: 20px;
+  height: 14px;
+  flex-shrink: 0;
 }

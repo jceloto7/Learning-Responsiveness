@@ -3,5 +3,11 @@
 body{
     box-sizing: border-box;
     background:variables.$background-color;
-    margin: 2rem 1rem;
+    //min-height: 100vh;
+    //position: relative;
+}
+
+footer{
+    position: fixed;
+    bottom: 0;
 }
