@@ -2,10 +2,15 @@
 @use '../abstract/mixins';
 
 .siteMain{
-    margin:10% 5%
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 3rem;
+   
 }
 
 .siteMain__weekDay{
+    width: 90%;
     h2{
         @include mixins.ff-fs-fw-fc(variables.$primary-font,16px,700,variables.$quaternary-color);
         margin-bottom:0.5rem;
@@ -15,6 +20,7 @@
 .siteMain__weekDay__appointments{
     display: flex;
     flex-direction:column;
+    
     gap:16px;
     margin-bottom: 2rem;
 }
@@ -24,16 +30,21 @@
     background: variables.$primary-color;
     border-radius: 8px;
     backdrop-filter: blur(11px);
-    width: 328px;
     height:170px;
     
-    grid-template-columns: 1rem 3rem 1.6rem 5.3rem 6.7rem auto;
+    //grid-template-columns: 1fr 3fr 1.6fr 5.3fr 6.7fr auto;
+    //grid-template-columns: 10% 10% 4% 20% 45% auto;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)) auto;
+
+
     grid-template-rows:1.3rem 1.3rem  1.7rem 0.8rem 1.6rem auto;     
 }
 
 .siteMain__weekDay__appointments__card__profilePic{
     grid-area: 2 / 2 / 3 / 3;
-    width: 32px;
+    width:32px;
+    //max-width: 64px;
+    //height: auto;
     height: 32px;
 
     border-radius: 16px;
@@ -63,7 +74,7 @@
 
 .siteMain__weekDay__appointments__card__service{
     grid-area:3/4/4/6;
-    @include mixins.ff-fs-fw-fc(variables.$primary-font,12px,400,variables.$quintenary-color); 
+    @include mixins.ff-fs-fw-fc(variables.$primary-font,max(12px,2vw),400,variables.$quintenary-color); 
 }
 
 

@@ -34,7 +34,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 296px;
+    width: 100%;
+    max-width: 580px;
     height: 48px;
     border-radius: 8px;
     background: variables.$secundary-color;

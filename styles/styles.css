@@ -63,13 +63,13 @@ footer {
   display: flex;
   align-items: center;
   gap: 16px;
-  margin: 10% 5%;
+  margin: 5% 5%;
   margin-bottom: 1.9rem;
 }
 
 .siteHeader__image__sonia {
-  width: 57px;
-  height: 57px;
+  width: max(3.6rem, 5vw);
+  height: auto;
   border-radius: 57px;
   background: url(<path-to-image>) lightgray -44.533px -13.58px/346.831% 231.027% no-repeat;
 }
@@ -81,22 +81,27 @@ footer {
 }
 .siteHeader__summary h2 {
   font-family: "Montserrat", sans-serif;
-  font-size: 22px;
+  font-size: max(1.4rem, 3vw);
   font-weight: 700;
   color: #464646;
-  align-self: flex-start;
 }
 .siteHeader__summary p {
   font-family: "Montserrat", sans-serif;
-  font-size: 14px;
+  font-size: max(0.9rem, 2vw);
   font-weight: 400;
   color: #A3A3A3;
 }
 
 .siteMain {
-  margin: 10% 5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 3rem;
 }
 
+.siteMain__weekDay {
+  width: 90%;
+}
 .siteMain__weekDay h2 {
   font-family: "Montserrat", sans-serif;
   font-size: 16px;
@@ -118,9 +123,8 @@ footer {
   border-radius: 8px;
   -webkit-backdrop-filter: blur(11px);
           backdrop-filter: blur(11px);
-  width: 328px;
   height: 170px;
-  grid-template-columns: 1rem 3rem 1.6rem 5.3rem 6.7rem auto;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)) auto;
   grid-template-rows: 1.3rem 1.3rem 1.7rem 0.8rem 1.6rem auto;
 }
 
@@ -159,7 +163,7 @@ footer {
 .siteMain__weekDay__appointments__card__service {
   grid-area: 3/4/4/6;
   font-family: "Montserrat", sans-serif;
-  font-size: 12px;
+  font-size: max(12px, 2vw);
   font-weight: 400;
   color: #A3A3A3;
 }
@@ -220,7 +224,8 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 296px;
+  width: 100%;
+  max-width: 580px;
   height: 48px;
   border-radius: 8px;
   background: #4894FF;

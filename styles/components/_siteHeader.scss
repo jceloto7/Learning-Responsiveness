@@ -5,16 +5,16 @@
     display: flex;
     align-items:center;
     gap:16px;
-    margin: 10% 5%;
+    margin: 5% 5%;
     margin-bottom:1.9rem ;
 }
 
 
 
 .siteHeader__image__sonia{
-    width: 57px;
-    height: 57px; 
-    
+    width: max(3.6rem,5vw);
+    height: auto;
+
     border-radius: 57px;
     background: url(<path-to-image>) lightgray -44.533px -13.58px / 346.831% 231.027% no-repeat;
 }
@@ -25,11 +25,10 @@
     gap:8px;
 
     h2{
-        @include mixins.ff-fs-fw-fc(variables.$primary-font,22px,700,variables.$quaternary-color);
-        align-self: flex-start;
+        @include mixins.ff-fs-fw-fc(variables.$primary-font,max(1.4rem,3vw),700,variables.$quaternary-color);
     }
 
     p{
-        @include mixins.ff-fs-fw-fc(variables.$primary-font,14px,400,variables.$quintenary-color); 
+        @include mixins.ff-fs-fw-fc(variables.$primary-font,max(0.9rem,2vw),400,variables.$quintenary-color); 
     }
 }
