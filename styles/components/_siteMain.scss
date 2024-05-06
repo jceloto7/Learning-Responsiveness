@@ -3,18 +3,21 @@
 
 .siteMain{
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    /*flex-direction: column;*/
+    justify-content: center;
+    flex-wrap: wrap;
     margin-bottom: 3rem;
    
 }
 
 .siteMain__weekDay{
-    width: 90%;
+    /*width: 90%;*/
     h2{
-        @include mixins.ff-fs-fw-fc(variables.$primary-font,16px,700,variables.$quaternary-color);
+        @include mixins.ff-fs-fw-fc(variables.$primary-font,max(16px,2.3vw),700,variables.$quaternary-color);
         margin-bottom:0.5rem;
     }
+    margin: 0 5%;
+    flex-grow: 1;
 }
 
 .siteMain__weekDay__appointments{
@@ -31,21 +34,18 @@
     border-radius: 8px;
     backdrop-filter: blur(11px);
     height:170px;
-    
-    //grid-template-columns: 1fr 3fr 1.6fr 5.3fr 6.7fr auto;
-    //grid-template-columns: 10% 10% 4% 20% 45% auto;
-    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)) auto;
-
-
-    grid-template-rows:1.3rem 1.3rem  1.7rem 0.8rem 1.6rem auto;     
+    //padding: 1rem;
+    grid-template-columns: 16px 48px 24px 85px 107px 32px 16px;
+    grid-template-rows: 16px 23px 27px 13px 24px 48px 16px;
+    //grid-template-columns: 10% 5% 20% 25% 10%; /* Use porcentagens para as colunas */
+    //grid-template-rows: 10% 15% 5% 10% 20%; 
+         
 }
 
 .siteMain__weekDay__appointments__card__profilePic{
-    grid-area: 2 / 2 / 3 / 3;
-    width:32px;
-    //max-width: 64px;
-    //height: auto;
-    height: 32px;
+    grid-area: 2 / 2 / 4 / 3;
+    width:max(2rem,2vw);
+    height: auto;
 
     border-radius: 16px;
     background: url(<path-to-image>) lightgray 50% / cover no-repeat;
@@ -61,7 +61,7 @@
 }
 
 .siteMain__weekDay__appointments__card__chat{
-    grid-area: 2/6/3/7;
+    grid-area: 2/6/3/6;
     width: 32px;
     height: 32px;
 }
@@ -82,7 +82,8 @@
     position: absolute;
     bottom:0.2rem;
     grid-area:4/1/5/7;
-    width: 328px;
+    width: 320px;
+    //width: 100%;
     height: 0.1px;
     opacity: 0.1;
     background: variables.$quaternary-color;
