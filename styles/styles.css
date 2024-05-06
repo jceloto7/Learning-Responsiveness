@@ -127,7 +127,8 @@ footer {
   -webkit-backdrop-filter: blur(11px);
           backdrop-filter: blur(11px);
   height: 170px;
-  grid-template-columns: 16px 48px 24px 85px 107px 32px 16px;
+  /*grid-template-columns: 16px 48px 24px 85px 107px 32px 16px;*/
+  grid-template-columns: 5% 15% 10% 25% 30% 10% 5%;
   grid-template-rows: 16px 23px 27px 13px 24px 48px 16px;
 }
 
@@ -135,6 +136,7 @@ footer {
   grid-area: 2/2/4/3;
   width: max(2rem, 2vw);
   height: auto;
+  justify-self: center;
   border-radius: 16px;
   background: url(<path-to-image>) lightgray 50%/cover no-repeat;
 }
@@ -159,8 +161,8 @@ footer {
 
 .siteMain__weekDay__appointments__card__camera {
   grid-area: 3/3/4/4;
-  width: 16px;
   height: 10.667px;
+  width: max(2rem, 10vw);
 }
 
 .siteMain__weekDay__appointments__card__service {
